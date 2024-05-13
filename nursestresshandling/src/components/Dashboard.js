@@ -18,28 +18,28 @@ export default function Dashboard(props) {
 
 
     const handleBarChartData = async () => {
-        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/bar_chart_data/part-00000-bef13a93-80d9-43b4-802e-b77a428e8369-c000.csv');
+        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/bar_chart_data/part-00000-ac92951d-aa0a-454f-b86d-0283fab7e38d-c000.csv');
         console.log("data from S3", data);
         setBarData(data);
 
     };
 
     const handlePatientData = async () => {
-        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/patient_bar/part-00000-dff4e718-7e58-4404-8a11-cf72d78ad382-c000.csv');
+        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/patient_bar/part-00000-267cf1d8-8f1b-474b-8bb1-ea46aad5b68b-c000.csv');
         console.log("patient data from S3", data);
         setPatientData(data);
 
     };
 
     const handleScatterData = async () => {
-        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/chart_data/part-00000-0e47abfb-b94b-4f33-bc55-89a972a2e90b-c000.csv');
+        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/chart_data/part-00000-985bd610-4217-4b79-acc9-0e3b6eb7b746-c000.csv');
         console.log("patient data from S3", data);
         setScatterData(data);
 
     };
 
     const handlePolar = async () => {
-        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/chart_data/part-00000-0e47abfb-b94b-4f33-bc55-89a972a2e90b-c000.csv');
+        const data = await fetchCSVFromS3('advancedbmrunu', 'output3/chart_data/part-00000-985bd610-4217-4b79-acc9-0e3b6eb7b746-c000.csv');
         console.log("patient data from S3", data);
         setPolarData(data);
 

@@ -79,7 +79,7 @@ function ScatterPlot({ data, chartId }) {
     };
   }, [chartData, chartId]);
 
-  return <canvas id={chartId} width="400" height="250"></canvas>;
+  return <canvas id={chartId} width="400" height="400"></canvas>;
 }
 
 export default ScatterPlot;

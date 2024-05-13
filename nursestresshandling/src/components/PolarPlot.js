@@ -10,13 +10,13 @@ function PolarPlot({ data, chartId }) {
     const prepareChartDataFromJSON = () => {
       try {
         // Extracting data from JSON object
-        const X = data.map(item => parseFloat(item.X));
-        const Y = data.map(item => parseFloat(item.Y));
-        const Z = data.map(item => parseFloat(item.Z));
+        const X = data.map(item => parseFloat(item.EDA));
+        const Y = data.map(item => parseFloat(item.HR));
+        const Z = data.map(item => parseFloat(item.TEMP));
 
         // Setting chart data
         setChartData({
-          labels: ['X', 'Y', 'Z'],
+          labels: ['EDA', 'HR', 'TEMP'],
           datasets: [
             {
               label: 'Orientation Data',
@@ -57,7 +57,7 @@ function PolarPlot({ data, chartId }) {
             scales: {
               r: {
                 suggestedMin: 0,
-                suggestedMax: 360
+                suggestedMax: 100
               }
             }
           }
